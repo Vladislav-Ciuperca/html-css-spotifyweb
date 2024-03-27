@@ -1,0 +1,9 @@
+.tools div:hover{
+    color: white;
+    cursor: pointer;
+    border-left: 3px solid green;
+}
+.playlist div:hover{
+    color: white;
+    cursor: pointer;
+}
