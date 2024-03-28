@@ -1,9 +1,27 @@
 .tools div:hover{
     color: white;
     cursor: pointer;
-    border-left: 3px solid green;
+    border-left: 3px solid greenyellow;
 }
 .playlist div:hover{
     color: white;
     cursor: pointer;
+}
+
+.bottomline{
+    height: 2px;
+    width: 40%;
+    background-color: greenyellow;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+.menu:hover{
+    cursor: pointer;
+    color: white;
+}
+.menu:hover div{
+    color: white;
+}
+.menu:hover .bottomline{
+    display: block;
 }
