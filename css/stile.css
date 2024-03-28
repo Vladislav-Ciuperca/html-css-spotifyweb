@@ -8,13 +8,21 @@ body{
     display: flex;
     flex-direction: column;
 }
+img{
+    width: 100%;
+}
+.debug{
+    border: 2px dashed yellowgreen;
+    background-color: rgba(132, 0, 255, 0.384);
+}
 /***************************** TOOLABR *************************/
 #toolbar{
-    width: 250px;
-    height: calc(100vh - 90px);
+    width: 200px;
+    height: calc(100vh - 60px);
     background-color: black;
     overflow: hidden;
     font-size: 14px;
+    /* border: 2px dashed red; */
 }
 
 .logo{
@@ -22,7 +30,10 @@ body{
     margin-right: 40px;
     width: 170px;
 }
-
+.prova{
+    /* border: 2px dashed purple; */
+    height: 490px;
+}
 .tools{
     min-height: 2rem;
 }
@@ -30,7 +41,7 @@ body{
 .playlist>div,
 .profile>div {
     min-height: 20px;
-    padding: 10px;
+    /* padding: 10px; */
     padding-left: 15px;
     margin-bottom: 10px;
     display: flex;
@@ -69,11 +80,22 @@ body{
 .playlist img{
     width: 100%;
 }
+
+.stretch{
+    /* border: 2px dashed red; */
+    display: flex;
+    flex-direction: column;
+}
+
 .profile{
-    min-height: 2rem;
+    /* border: 2px dashed green; */
+    height:calc(100% - 564px);
     margin: 0 15px;
-    margin-top: 130px;
     color: rgb(146, 146, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
 }
 .down-img{
     flex-shrink: 0;
@@ -108,6 +130,87 @@ body{
 
 #player{
     width: 100%;
-    height: 90px;
-    background-color: aquamarine;
+    height: 60px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right{
+    width: 200px;
+    /* border: 2px dashed purple; */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+#menu-img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+.song div{
+    color: #595959;
+    font-size: 10px;
+    font-weight: 700;
+}
+h5{
+    color: white;
+}
+.favourite{
+    margin-left: 10px;
+    color: #595959;
+}
+.favourite i:first-of-type{
+    margin-right: 5px;
+}
+.mid{
+    width: 40%;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.up{
+    width: 200px;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    color: white;
+    font-size: 18px;
+}
+.fa-circle-play{
+    font-size: 25px;
+}
+
+.down{
+    width: 100%;
+    height: 45%;
+}
+.ico{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time{
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+}
+.down .music{
+    width: calc(100% - 75px);
+}
+.music{
+    width: 51%;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 25%, rgba(89,89,89,1) 25%);     height: 4px;
+    border-radius: 3px;
 }
