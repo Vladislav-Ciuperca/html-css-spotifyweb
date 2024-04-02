@@ -4,7 +4,82 @@
         justify-content: start;
     }
     .row>div{
-        width: 23%;
+        width: calc(25% - 10px);
+    }
+}
+@media screen and (max-width: 680px){
+    #menu-img{
+        width: 30px;
+        height: 30px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .song div{
+        font-size: 8px;
+    }
+    .left,.right{
+        max-width: 130px;
+    }
+}
+@media screen and (max-width: 500px){
+    .row{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .row>div{
+        width: calc(50% - 10px);
     }
     
+}
+@media screen and (max-width: 480px){
+    .playlist{
+        display: none;
+    }  
+    .logo{
+        display: none;
+    }  
+    .logo-small{
+        display: block;
+        width: 50px;
+        padding: 10px 14px;
+    }
+    .tools span{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .profile{
+        margin: 0 7px;
+    }
+    .profile span{
+        display: none;
+    }
+    .profile>div{
+        padding-left: 0;
+    }
+    #toolbar{
+        width: 45px;
+    }
+    .install{
+        border: none;
+        margin-left: 4px;
+    }
+    .right{
+        width: 120px;
+    }
+    .right i{
+        font-size: 10px;
+    }
+    .mid i{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .mid{
+        width: 39%;
+    }
+    .up{
+        width:180px;
+    }
 }
