@@ -7,7 +7,6 @@
     color: white;
     cursor: pointer;
 }
-
 .bottomline{
     height: 2px;
     width: 40%;
@@ -30,4 +29,10 @@
 }
 .music:hover{
     background: linear-gradient(90deg, greenyellow 25%, rgba(89,89,89,1) 25%);
+}
+.row-img:hover i{
+    display: block;
+}
+.upgrade div:hover{
+    transform: scale(1.1);
 }

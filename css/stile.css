@@ -237,7 +237,7 @@ main>h4{
 .upgrade{
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 5px;
+    padding: 20px 15px;
     background-color: #0000009d;
     position: sticky;
 }
@@ -279,7 +279,16 @@ nav div{
 .row-img{
     max-width: 200px;
     max-height:200px;
-
+    position: relative;
+}
+.row-img i{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
 }
 .row h3{
     padding: 5px 0;
@@ -288,6 +297,7 @@ nav div{
 .round img{
     border-radius: 50%;
 }
+
 
 
 
